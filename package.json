@@ -1,0 +1,25 @@
+{
+  "name": "dubbo-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "dubbo",
+    "clinet",
+    "rpc"
+  ],
+  "author": "Gary",
+  "license": "ISC",
+  "dependencies": {
+    "bytebuffer": "^5.0.1",
+    "hessian.js": "^2.1.6",
+    "ring": "^2.1.0",
+    "simple-net": "0.0.2",
+    "tracer": "^0.8.3",
+    "underscore": "^1.8.3"
+  }
+}
