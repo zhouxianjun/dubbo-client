@@ -18,6 +18,7 @@
     "bytebuffer": "^5.0.1",
     "co": "^4.6.0",
     "hessian.js": "^2.1.6",
+    "node-schedule": "^1.1.0",
     "q": "^1.4.1",
     "ring": "^2.1.0",
     "simple-net": "0.0.2",
