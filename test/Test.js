@@ -48,7 +48,7 @@ const net = require('net');
 const util = require('util');
 const ring = require('ring');
 const co = require('co');
-const URL = require('../lib/registry/URL');
+const URL = require('../lib/registry/URL.ring');
 let u = new URL({
     protocol: 'http',
     host: 'www.cn-face.com',
@@ -58,7 +58,17 @@ let u = new URL({
         application: 'demo-provider'
     }
 });
-
+URL.xx = 1;
+console.log(require.cache['e:\\Gary\\working\\dubbo-client\\lib\\Constants.js'].exports);
 console.log(u.toString());
 
 console.log('multicast://224.5.6.7:1234?backup=224.5.6.7:5678'.split(/\s*[|;]+\s*/));
+
+let a = new Set([1,u,2]);
+console.log([...a].indexOf(u));
+
+var RingUtils = require('../lib/util/RingUtils');
+var object = RingUtils.newObject('URL');
+console.log(object.protocol);
+object.protocol = 111;
+console.log(RingUtils.newObject('URL').protocol);
